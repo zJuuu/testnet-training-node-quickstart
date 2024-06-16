@@ -82,3 +82,8 @@ if __name__ == "__main__":
             os.system("rm -rf merged_model")
             os.system("rm -rf outputs")
             continue
+        
+    # sleep infinitely
+    while True:
+        logger.info("All models have been trained and submitted. You can close the deployment now.")
+        time.sleep(60)
